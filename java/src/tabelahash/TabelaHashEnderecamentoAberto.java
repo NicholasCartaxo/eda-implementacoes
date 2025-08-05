@@ -186,6 +186,7 @@ public class TabelaHashEnderecamentoAberto {
             }
             if (tmpAluno.getMatricula().equals(chave)) {
                 idxPut = hash;
+                this.size -= 1;
                 break;
             }
             if(idxPut == -1 && tmpAluno.equals(APAGADO)){
